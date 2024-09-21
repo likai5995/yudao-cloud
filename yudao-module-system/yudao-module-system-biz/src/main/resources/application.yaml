@@ -40,7 +40,7 @@ server:
 
 logging:
   file:
-    name: ${user.home}/logs/${spring.application.name}.log # 日志文件名，全路径
+    name: ../logs/${spring.application.name}.log # 日志文件名，全路径
 
 --- #################### 接口文档配置 ####################
 
@@ -123,7 +123,7 @@ xxl:
   job:
     executor:
       appname: ${spring.application.name} # 执行器 AppName
-      logpath: ${user.home}/logs/xxl-job/${spring.application.name} # 执行器运行日志文件存储磁盘路径
+      logpath: ../logs/xxl-job/${spring.application.name} # 执行器运行日志文件存储磁盘路径
     accessToken: default_token # 执行器通讯TOKEN
 
 --- #################### 验证码相关配置 ####################
